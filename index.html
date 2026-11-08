@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Agent — Google-Integration</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.25rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a; background: #fbfbfd;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .sub { color: #6b6b76; margin: 0 0 2.2rem; font-size: 1.05rem; }
+  h2 { font-size: 1.1rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+  ul { padding-left: 1.15rem; margin: .6rem 0; }
+  li { margin: .3rem 0; }
+  code {
+    font: .875em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: #eeeff3; padding: .12em .38em; border-radius: 4px;
+  }
+  .box {
+    border: 1px solid #e2e2e8; border-radius: 10px; padding: 1.1rem 1.3rem;
+    margin: 1.6rem 0; background: #fff;
+  }
+  footer {
+    margin-top: 3.4rem; padding-top: 1.4rem; border-top: 1px solid #e2e2e8;
+    color: #6b6b76; font-size: .9rem;
+  }
+  a { color: #2952e3; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6ea; background: #131318; }
+    .sub, footer { color: #9a9aa6; }
+    code { background: #26262e; }
+    .box { background: #1b1b22; border-color: #2c2c35; }
+    a { color: #8ab4ff; }
+    footer { border-top-color: #2c2c35; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hermes Agent — Google-Integration</h1>
+  <p class="sub">Persönlicher Automatisierungsagent für Kalender, Aufgaben und Dateien.</p>
+
+  <p>
+    Diese Anwendung ist ein privat betriebener <strong>Hermes Agent</strong>. Er läuft auf einem
+    eigenen Server des Betreibers und verbindet sich über die Google-APIs mit
+    <strong>genau einem</strong> Google-Konto — dem des Betreibers selbst. Es gibt keine
+    weiteren Nutzer, keine Registrierung und keine Weitergabe von Daten an Dritte.
+  </p>
+
+  <h2>Wofür die Google-Anbindung genutzt wird</h2>
+  <ul>
+    <li><strong>Kalender</strong> — Termine anlegen, ändern und löschen, die der Agent selbst erzeugt hat. Beispiel: eine Frostwarnung für Balkonpflanzen, sobald die Wettervorhersage Nachtfrost meldet.</li>
+    <li><strong>Aufgaben</strong> — Lesen und Pflegen der persönlichen Aufgabenlisten.</li>
+    <li><strong>Drive, Docs, Tabellen</strong> — Ablage und Auswertung eigener Dokumente auf Anweisung des Betreibers.</li>
+    <li><strong>Kontakte</strong> — ausschließlich lesend, zur Zuordnung von Namen zu E-Mail-Adressen.</li>
+    <li><strong>Gmail</strong> — ausschließlich lesend sowie zum Verfassen von Entwürfen. Es werden keine Nachrichten ohne ausdrückliche Bestätigung versendet.</li>
+  </ul>
+
+  <h2>Wie mit den Daten umgegangen wird</h2>
+  <div class="box">
+    <p style="margin:0">
+      Alle Zugangsdaten und abgerufenen Inhalte liegen ausschließlich auf dem eigenen Server
+      des Betreibers. Es findet keine Übermittlung an Dritte statt. Details:
+      <a href="privacy.html">Datenschutzerklärung</a>.
+    </p>
+  </div>
+
+  <h2>Zugriff entziehen</h2>
+  <p>
+    Die erteilte Berechtigung lässt sich jederzeit und ohne Rückfrage widerrufen unter
+    <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+    Danach hat die Anwendung keinerlei Zugriff mehr auf das Konto.
+  </p>
+
+  <footer>
+    Privat betriebener Automatisierungsagent · Kontakt:
+    <a href="mailto:his.hermes.agent@gmail.com">his.hermes.agent@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>

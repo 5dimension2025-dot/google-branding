@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — Hermes Agent</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.25rem;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a1a1a; background: #fbfbfd;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .sub { color: #6b6b76; margin: 0 0 2.2rem; font-size: .95rem; }
+  h2 { font-size: 1.08rem; margin: 2.3rem 0 .55rem; letter-spacing: -.01em; }
+  h3 { font-size: .97rem; margin: 1.5rem 0 .35rem; color: #3a3a44; }
+  ul { padding-left: 1.15rem; margin: .5rem 0; }
+  li { margin: .28rem 0; }
+  code {
+    font: .875em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: #eeeff3; padding: .12em .38em; border-radius: 4px;
+  }
+  table { border-collapse: collapse; width: 100%; margin: .9rem 0; font-size: .94rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid #e2e2e8; vertical-align: top; }
+  th { font-weight: 600; }
+  footer {
+    margin-top: 3.4rem; padding-top: 1.4rem; border-top: 1px solid #e2e2e8;
+    color: #6b6b76; font-size: .9rem;
+  }
+  a { color: #2952e3; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6ea; background: #131318; }
+    .sub, footer { color: #9a9aa6; }
+    h3 { color: #c3c3cd; }
+    code { background: #26262e; }
+    th, td { border-bottom-color: #2c2c35; }
+    a { color: #8ab4ff; }
+    footer { border-top-color: #2c2c35; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung</h1>
+  <p class="sub">Hermes Agent — privat betriebene Google-Integration · Stand: 8. November 2026</p>
+
+  <p>
+    Diese Datenschutzerklärung beschreibt, wie die Anwendung <strong>Hermes Agent</strong>
+    (nachfolgend „die Anwendung") auf Google-Nutzerdaten zugreift, sie verwendet, speichert
+    und weitergibt. Die Anwendung wird ausschließlich privat vom Betreiber für sein eigenes
+    Google-Konto genutzt. Sie ist nicht öffentlich zugänglich, es gibt keine Registrierung
+    und keine weiteren Nutzer.
+  </p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Betreiber und Verantwortlicher für die Datenverarbeitung:<br>
+    Uwe S., erreichbar unter
+    <a href="mailto:his.hermes.agent@gmail.com">his.hermes.agent@gmail.com</a>.
+  </p>
+
+  <h2>2. Welche Google-Daten zugegriffen wird</h2>
+  <table>
+    <tr><th>Bereich</th><th>Umfang</th><th>Zweck</th></tr>
+    <tr>
+      <td>Kalender</td>
+      <td>Kalender und Termine lesen, erstellen, ändern, löschen</td>
+      <td>Automatisch erzeugte Erinnerungstermine pflegen, z. B. eine Frostwarnung für Balkonpflanzen</td>
+    </tr>
+    <tr>
+      <td>Aufgaben</td>
+      <td>Aufgabenlisten und Aufgaben lesen und bearbeiten</td>
+      <td>Führung der persönlichen Aufgabenlisten</td>
+    </tr>
+    <tr>
+      <td>Drive</td>
+      <td>Dateien lesen, erstellen, ändern</td>
+      <td>Ablage und Auswertung eigener Dokumente</td>
+    </tr>
+    <tr>
+      <td>Docs / Tabellen</td>
+      <td>Dokumente und Tabellen lesen, erstellen, ändern</td>
+      <td>Erstellung und Pflege eigener Dokumente und Auswertungen</td>
+    </tr>
+    <tr>
+      <td>Kontakte</td>
+      <td>Ausschließlich lesend</td>
+      <td>Zuordnung von Namen zu E-Mail-Adressen</td>
+    </tr>
+    <tr>
+      <td>Gmail</td>
+      <td>Ausschließlich lesend, sowie Verfassen von Entwürfen</td>
+      <td>Sichten und Vorbereiten von Nachrichten. Ein Versand erfolgt nur nach ausdrücklicher Bestätigung durch den Betreiber.</td>
+    </tr>
+  </table>
+
+  <h3>Google-Daten werden nicht verwendet für</h3>
+  <ul>
+    <li>Werbung, Profilbildung oder Bonitätsprüfungen</li>
+    <li>das Training oder Verbessern von KI-Modellen</li>
+    <li>die Weitergabe an Dritte, Datenhändler oder andere Unternehmen</li>
+    <li>jeden Zweck, der nicht ausdrücklich in dieser Erklärung genannt ist</li>
+  </ul>
+
+  <h2>3. Speicherung</h2>
+  <p>
+    Die Anwendung läuft auf einem privaten Server des Betreibers. Dort werden gespeichert:
+  </p>
+  <ul>
+    <li>der OAuth-Token für den Zugriff auf das Google-Konto (Dateirechte <code>600</code>, nur für den Dienstnutzer lesbar)</li>
+    <li>eine lokale Statusdatei mit den Kennungen der selbst erzeugten Termine</li>
+    <li>Protokolldateien über die eigenen Programmläufe</li>
+  </ul>
+  <p>
+    Abgerufene Google-Inhalte werden nicht an Dritte übermittelt und nicht auf
+    Servern Dritter gespeichert. Sie verbleiben ausschließlich auf dem Server des
+    Betreibers.
+  </p>
+
+  <h3>Übermittlung an Sprachmodell-Anbieter</h3>
+  <p>
+    Die Anwendung nutzt zur Sprachanalyse ein Sprachmodell über einen API-Anbieter. Dabei
+    werden ausschließlich solche Inhalte übermittelt, die für die jeweilige Aufgabe
+    erforderlich sind, und nur, wenn der Betreiber die Aufgabe auslöst. Automatische
+    Hintergrunddienste — beispielsweise der Frostwächter — arbeiten ohne Sprachmodell und
+    übermitteln keine Google-Nutzerdaten.
+  </p>
+
+  <h2>4. Weitergabe an Dritte</h2>
+  <p>
+    Es erfolgt <strong>keine</strong> Weitergabe von Google-Nutzerdaten an Dritte. Die
+    Nutzung beschränkt sich auf den Betreiber selbst und dessen eigene Geräte und Server.
+  </p>
+
+  <h2>5. Löschung und Widerruf</h2>
+  <p>
+    Die erteilte Berechtigung kann jederzeit widerrufen werden unter
+    <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+    Mit dem Widerruf endet der Zugriff der Anwendung auf das Google-Konto unmittelbar.
+    Der lokal gespeicherte Token wird damit ungültig. Lokale Status- und Protokolldateien
+    können zusätzlich jederzeit vom Betreiber gelöscht werden.
+  </p>
+
+  <h2>6. Einhaltung der Google-Nutzerdatenrichtlinie</h2>
+  <p>
+    Die Anwendung verwendet Google-Nutzerdaten ausschließlich zur Bereitstellung und
+    Verbesserung der hier beschriebenen, selbst genutzten Funktionen. Die Nutzung
+    beschränkt sich auf das erforderliche Minimum. Die Anforderungen der
+    <em>Google API Services User Data Policy</em>, einschließlich der
+    <em>Limited Use</em>-Anforderungen, werden eingehalten. Google-Nutzerdaten werden nicht
+    für Werbung verwendet und nicht an Dritte verkauft.
+  </p>
+
+  <h2>7. Änderungen</h2>
+  <p>
+    Ändert sich die Art der Datenverarbeitung, wird diese Erklärung entsprechend
+    aktualisiert und das Datum am Seitenkopf angepasst.
+  </p>
+
+  <footer>
+    Hermes Agent — privat betriebener Automatisierungsagent ·
+    <a href="index.html">Startseite</a> ·
+    <a href="mailto:his.hermes.agent@gmail.com">his.hermes.agent@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
